@@ -45,6 +45,6 @@ contract DegenToken is ERC20, Ownable {
     }
 
     function showStore() external pure returns (string memory) {
-        return "1. Pokemon Rayquaza NFT(1000 tokens) 2. Pokemon Sceptile NFT(500 tokens) 3. Pokemon Kyogre NFT(500 tokens) 4. Pokemon Reshiram NFT(100 tokens)";
+        return "1. Pokemon Rayquaza NFT(1000 tokens) 2. Pokemon Sceptile NFT(500 tokens) 3. Pokemon Kyogre NFT(500 tokens) 4. Pokemon Reshiram NFT(500 tokens)";
     }
 }
