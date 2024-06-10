@@ -1,41 +1,13 @@
-# Project Title
+Setup your .env file with your Metamask account.
+Install following dependacy:
+npm install --save-dev hardhat
+npm install @openzeppelin/contracts
 
-Simple overview of use/purpose.
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Setup your Smart Contract
+run the Hardhat node: npx hardhat node
+deploy the contract on Fuji C chain: npx hardhat run scripts/deploy.js --network fuji
+open smart contract on Remix: remixd -s <your folder location> -u https://remix.ethereum.org
+Test on a testnet.
 
 
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+loom video for verification: https://www.loom.com/share/32651e04139c4542bf97170b797c32fd?sid=55fb7db1-aac8-4881-badb-a6214d23a55d
