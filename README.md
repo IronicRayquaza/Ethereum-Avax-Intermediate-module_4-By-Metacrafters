@@ -18,3 +18,5 @@
 
 
 loom video for verification: https://www.loom.com/share/32651e04139c4542bf97170b797c32fd?sid=55fb7db1-aac8-4881-badb-a6214d23a55d
+
+redeem option functionality: https://www.loom.com/share/1551eb52ba954a62b03f1f3ea2b05043?sid=624b05f0-4ff7-4728-920d-a8060982e9b3
