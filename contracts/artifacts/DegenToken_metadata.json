@@ -551,11 +551,11 @@
 			]
 		},
 		"contracts/DegenToken.sol": {
-			"keccak256": "0xe8afdebf0467574bc3c703c42e585e6ca15cb100b373c09f670a8b33b8385bc7",
+			"keccak256": "0x2fc86637e2ff9860c6812dc66b2c99bcf19c277431623dfe3c3f11a2b86bb67b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7a1ed036b475469e2b9eab4ae4d03e43a69c7f8471fbbd28d8bed2d876de3035",
-				"dweb:/ipfs/QmfNrBzWYzW1EFELWtpEfZuxYGdrbpursddR6DkQhWVrg7"
+				"bzz-raw://de6901573d273ccfc34e198dade2c9596c71d2e2288adb4f6de36c5efc621023",
+				"dweb:/ipfs/QmUbJdWqzJTdFmRbXU6g8GKmpgAacyT4hCJFT59gAXQv3G"
 			]
 		}
 	},
