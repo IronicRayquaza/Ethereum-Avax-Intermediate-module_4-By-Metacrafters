@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Ethereum-Avax-Intermediate-module_4-By-Metacrafters\\contracts\\DegenToken.sol": {
-      "lastModificationDate": 1718802966202,
-      "contentHash": "e8e55cc902583df65a2b21f16f5012f3",
+      "lastModificationDate": 1718935707142,
+      "contentHash": "679372bd28d7e503112ad28f5af048d8",
       "sourceName": "contracts/DegenToken.sol",
       "solcConfig": {
         "version": "0.8.19",

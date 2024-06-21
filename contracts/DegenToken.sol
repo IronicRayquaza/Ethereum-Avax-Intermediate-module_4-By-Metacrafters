@@ -13,6 +13,7 @@ contract DegenToken is ERC20, Ownable {
     }
 
     mapping(uint256 => Item) public items;
+    mapping(address => mapping(uint256 => uint256)) public redeemedItems; // New mapping to track redeemed items per user
 
     constructor() ERC20("Degen", "DGN") {
         items[1] = Item("Pokemon Rayquaza NFT", 1000);
@@ -30,10 +31,10 @@ contract DegenToken is ERC20, Ownable {
         _burn(msg.sender, amount);
     }
     
-    function TransferToken(address _reciever, uint amount) external {
+    function TransferToken(address _receiver, uint amount) external {
         require(balanceOf(msg.sender) >= amount, "Sorry, Not enough Degen tokens available");
         approve(msg.sender, amount);
-        transferFrom(msg.sender, _reciever, amount);
+        transferFrom(msg.sender, _receiver, amount);
     }
         
     function redeem(uint256 item) external payable {
@@ -42,9 +43,14 @@ contract DegenToken is ERC20, Ownable {
         require(balanceOf(msg.sender) >= selectedItem.redeemAmount, "Insufficient balance to redeem");
 
         _burn(msg.sender, selectedItem.redeemAmount);
+        redeemedItems[msg.sender][item] += 1; // Track the redeemed item
     }
 
     function showStore() external pure returns (string memory) {
         return "1. Pokemon Rayquaza NFT(1000 tokens) 2. Pokemon Sceptile NFT(500 tokens) 3. Pokemon Kyogre NFT(500 tokens) 4. Pokemon Reshiram NFT(500 tokens)";
+    }
+
+    function getRedeemedItems(address user, uint256 item) external view returns (uint256) {
+        return redeemedItems[user][item]; // Function to get the count of redeemed items for a user
     }
 }

@@ -83,7 +83,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_reciever",
+						"name": "_receiver",
 						"type": "address"
 					},
 					{
@@ -218,6 +218,30 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "item",
+						"type": "uint256"
+					}
+				],
+				"name": "getRedeemedItems",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "spender",
 						"type": "address"
 					},
@@ -317,6 +341,30 @@
 				"name": "redeem",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "redeemedItems",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -551,11 +599,11 @@
 			]
 		},
 		"contracts/DegenToken.sol": {
-			"keccak256": "0x2fc86637e2ff9860c6812dc66b2c99bcf19c277431623dfe3c3f11a2b86bb67b",
+			"keccak256": "0xccf93188c75b226906f862bc99e3a9d8ed782c68f40ea7b22f8261a07762a977",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://de6901573d273ccfc34e198dade2c9596c71d2e2288adb4f6de36c5efc621023",
-				"dweb:/ipfs/QmUbJdWqzJTdFmRbXU6g8GKmpgAacyT4hCJFT59gAXQv3G"
+				"bzz-raw://3c48b7e84f1a48c4460b99096cd4b57e776e101206ea7ccba5cfd6f9afe71df2",
+				"dweb:/ipfs/Qmf9GjYZiftSdVeULsCeb5bErLyG3WvHCkQ3HKU2YSqGtS"
 			]
 		}
 	},
