@@ -1,21 +1,32 @@
-1. Setup your .env file with your Metamask account.
+Setup your .env file with your Metamask account.
 
-2. Install following dependacy:
+Install all dependancies by using:
+```shell
+npm install
+```
 
-      npm install --save-dev hardhat  
+Install some important dependancy:
+```shell
+npm install remixd or npm install -g @remix-project/remixd --force
+npm install --save-dev hardhat  
+npm install @openzeppelin/contracts
+```
+      
+Setup your Smart Contract and deploy using following commands:
+```shell
+#run the Hardhat node
+npx hardhat node
 
-      npm install @openzeppelin/contracts
+#deploy the contract on Fuji C chain
+npx hardhat run scripts/deploy.js --network fuji
 
-3. Setup your Smart Contract:
-   
-     run the Hardhat node: npx hardhat node
+#open smart contract on Remix
+remixd -s <your_folder_location> -u https://remix.ethereum.org
+```
 
-     deploy the contract on Fuji C chain: npx hardhat run scripts/deploy.js --network fuji
+Test on a testnet.
 
-     open smart contract on Remix: remixd -s <your_folder_location> -u https://remix.ethereum.org
-
-4. Test on a testnet.
-
+Note: if remixd gives error run powershell as admin and run Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
 
 loom video for verification: https://www.loom.com/share/32651e04139c4542bf97170b797c32fd?sid=55fb7db1-aac8-4881-badb-a6214d23a55d
 
